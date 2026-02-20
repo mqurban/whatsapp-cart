@@ -1,0 +1,294 @@
+/* Global Wrapper */
+.whatsapp-cart-admin-wrap {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    max-width: 100%;
+    margin: 20px 20px 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+.whatsapp-cart-header {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px 12px 0 0;
+    margin: -40px -40px 30px -40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+}
+
+.whatsapp-cart-header h1 {
+    color: #fff !important;
+    margin: 0 !important;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+}
+
+.whatsapp-cart-header .dashicons {
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+}
+
+/* Tabs */
+.nav-tab-wrapper {
+    border-bottom: 1px solid #e5e5e5 !important;
+    margin-bottom: 30px !important;
+    padding-bottom: 0 !important;
+}
+
+.nav-tab {
+    border: none !important;
+    background: transparent !important;
+    margin: 0 20px 0 0 !important;
+    padding: 10px 5px !important;
+    font-size: 16px !important;
+    color: #666 !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent !important;
+}
+
+.nav-tab:hover {
+    color: #25D366 !important;
+}
+
+.nav-tab-active {
+    color: #128C7E !important;
+    border-bottom: 3px solid #128C7E !important;
+    background: transparent !important;
+}
+
+/* Form Styles */
+.form-table {
+    margin-top: 0;
+}
+
+.form-table th {
+    font-weight: 600;
+    color: #333;
+    padding: 25px 10px 25px 0;
+    width: 250px;
+    font-size: 15px;
+}
+
+.form-table td {
+    padding: 20px 10px;
+}
+
+.form-table input[type="text"],
+.form-table textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+    box-shadow: none !important;
+}
+
+.form-table input[type="text"]:focus,
+.form-table textarea:focus {
+    border-color: #25D366;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1) !important;
+}
+
+.description {
+    color: #888;
+    font-style: normal;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Toggle Switch */
+.whatsapp-cart-toggle {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+}
+
+.whatsapp-cart-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e0e0e0;
+    transition: .3s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input:checked + .slider {
+    background-color: #25D366;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* Submit Button */
+.whatsapp-cart-submit {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.button-primary {
+    background: #25D366 !important;
+    border-color: #25D366 !important;
+    color: #fff !important;
+    text-shadow: none !important;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    padding: 8px 24px !important;
+    height: auto !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+}
+
+.button-primary:hover {
+    background: #128C7E !important;
+    border-color: #128C7E !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(18, 140, 126, 0.4) !important;
+}
+
+/* Analytics Dashboard */
+.whatsapp-cart-analytics {
+    padding-top: 10px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: left;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-color: #25D366;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #25D366;
+    opacity: 0.5;
+}
+
+.card h3 {
+    margin: 0 0 15px 0;
+    font-size: 13px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.card .number {
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Recent Activity Table */
+.wp-list-table {
+    border: none !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.wp-list-table thead th {
+    background: #f8f9fa;
+    border-bottom: 2px solid #eee;
+    padding: 15px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.wp-list-table tbody td {
+    padding: 15px;
+    vertical-align: middle;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.wp-list-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.wp-list-table tbody tr:hover {
+    background: #fcfcfc;
+}
+
+.wp-list-table a {
+    color: #128C7E;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.wp-list-table a:hover {
+    color: #25D366;
+    text-decoration: underline;
+}

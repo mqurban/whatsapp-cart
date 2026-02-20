@@ -1,0 +1,21 @@
+.whatsapp-cart-btn {
+    background-color: #25D366 !important;
+    color: #fff !important;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 0;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+.whatsapp-cart-btn:hover {
+    background-color: #128C7E !important;
+    color: #fff !important;
+}
+.whatsapp-cart-btn.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
