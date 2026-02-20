@@ -2,7 +2,7 @@
 /**
  * Fired during plugin activation
  *
- * @link       https://example.com
+ * @link       https://mqurban.com
  * @since      1.0.0
  *
  * @package    WhatsAppCart
